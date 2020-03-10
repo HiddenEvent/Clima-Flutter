@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:clima/utilities/constants.dart';
+import 'package:geolocator/geolocator.dart';
 
 class LocationScreen extends StatefulWidget {
   @override
@@ -74,3 +75,10 @@ class _LocationScreenState extends State<LocationScreen> {
     );
   }
 }
+
+//double temperature = weatherData['main']['temp'];
+//int condition = weatherData['weather'][0]['id'];
+//String contry = weatherData['name'];
+//print(temperature);
+//print(condition);
+//print(contry);
