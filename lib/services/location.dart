@@ -11,7 +11,8 @@ class LocationInfo {
     try{
 
       //정확도를 높일수록 배터리 소모가 큼
-      Position position = await Geolocator().getCurrentPosition(desiredAccuracy: LocationAccuracy.high);
+      Position position = await Geolocator().getCurrentPosition
+        (desiredAccuracy: LocationAccuracy.low);
 
       print(position.latitude);
       _latitude = position.latitude;
